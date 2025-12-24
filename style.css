@@ -1,0 +1,82 @@
+body {
+    font-family :'Times New Roman', Times, serif;
+}
+
+.card {
+    background-color: rgb(214, 247, 177);
+    border-radius: 50px;
+    margin: 20%;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:"792px") {
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+
+    .card-content {
+        margin-top: 15px;
+    }
+}
+
+
+h1 {
+    font-size: 38px;
+    align-items:center ;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-radius:10px;
+    background-color: rgb(15, 148, 22);
+    padding: 5px;
+    color: white;
+    
+    
+}
+
+button:hover {
+    background-color :rgb(255, 4, 79);
+    opacity: 40%;
+   border: none;
+   outline: none;
+}
+
+.card-content button {
+    margin: auto 45px;
+}
+
+p {
+    display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.card-content input {
+    padding: 10px;
+   border: none;
+   font-size: 18px;
+   border-bottom: 1px solid;
+   outline: none;
+}
+
+p {
+    animation: pointdown 1000ms infinite alternate-reverse;
+
+}
+
+@keyframes pointdown {
+    0% {
+        transition: translateY(0);
+    }
+    100% {
+        transform: translateY(16px);
+    }
+
+}
